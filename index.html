@@ -1,13 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Daisyui project</title>
-</head>
-<body>
-    <header>
-        
+    <!-- tailwind css and daisy ui -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- custom color -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                text: '#414040',
+                description: '#707070',
+                'primary-color': '#B68C5A'
+              }
+            }
+          }
+        }
+      </script>
+  </head>
+  <body>
+    <header class="container mx-auto">
+      <nav class="py-6">
+        <div class="lg:flex justify-around items-center text-center space-y-3">
+            <div class="flex justify-center items-center space-x-3">
+              <img class="" src="images/business.png" alt="" />
+              <h3 class="text-4xl font-extrabold text-text">Justice</h3>
+            </div>
+            <div class="space-x-3">
+              <a href="#">Home</a>
+              <a href="#">Services</a>
+              <a href="#">Cases</a>
+              <a href="#">Blog</a>
+              <a href="#">Contact Us</a>
+            </div>
+            <div>
+                <button class="bg-primary-color text-white py-4 px-8 rounded-lg">Free Consultation</button>
+            </div>
+        </div>
+        </div>
+      </nav>
+      <!-- banner section -->
+     <div style="background-image: url(./images/banner.png); background-repeat: no-repeat; " class="text-center h-[70vh ml-12">
+        <h2 class="text-white text-xl lg:text-6xl font-extrabold pt-20">We Provide Effective <br> Legal Solutions</h2>
+        <p class="text-[#E7E7E7] py-6">There are many variations of passages of Lorem Ipsum available, but the majority <br> have suffered alteration in some form, by injected humour.</p>
+        <div class="">
+            <input class="py-4 pr-20 pl-4 mx-3" type="search" name="search" id="" placeholder="Search your services">
+            <button class="bg-primary-color text-white py-4 px-8 rounded-lg">Search</button>
+        </div>
+      </div>
+
     </header>
-</body>
+  </body>
 </html>
